@@ -36,6 +36,9 @@ gem 'font-awesome-rails'
 gem 'carrierwave'
 gem "erd"
 gem 'annotate'
+gem 'pdfkit'
+gem "wkhtmltopdf-binary"
+gem 'resque-heroku'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
