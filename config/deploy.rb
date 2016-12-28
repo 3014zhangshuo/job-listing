@@ -2,7 +2,7 @@
 lock "3.7.1"
 
 set :application, "job-listing"
-set :repo_url, "git@egithub.com:3014zhangshuo/job-listing.git"
+set :repo_url, "git@github.com:3014zhangshuo/job-listing.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
@@ -24,6 +24,7 @@ set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/
 # Default value for :linked_files is []
 # append :linked_files, "config/database.yml", "config/secrets.yml"
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle')
+set :passenger_restart_with_touch, true
 # Default value for linked_dirs is []
 # append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
 
